@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tablas</title>
+  <style type="text/css">
+	  {margin: 0;padding: 0;}
+	  
+	  table{background-color: #f2f2f2;
+	        color: #FE724C;
+	        margin-left: 40px}
+	  
+	  header,nav,main,footer{width: 760px;
+		       background-color: #FFC529;
+			   margin: 0 auto;
+			   padding: 10px;}
+	  
+	  header{text-align: center;
+		     padding: 10px;
+		     background-color:#272d2f}
+	  
+	  nav{background-color:#FE724C;
+		    height: 10px;
+			padding: 8px 10px;}
+	  
+	  section{ width: 700px;
+		       height: auto;
+		       background-color:#f2f2f2;
+		       margin: 15px auto;
+		       padding: 15px 0px;}
+		
+	  footer{background-color:#FE724C;
+		     color: #f2f2f2;
+		     height:13px;
+		     padding: 10px;
+		     text-align: center;
+	         margin-left: -10px}
+	  
+	  h1 {font-size: 40px;
+		    color:#f2f2f2;}
+	  
+	  h2 {font-size: 25px;
+		  color: #FE724C;
+	      margin-left: 20px;
+	      margin-top: 0px}
+	  
+	  #t01,#t01 th,#t01 td,#t02, #t02 th,#t02 td{border-collapse: collapse;}
+	  
+	  #t01,#t01 th,#t01 td
+	          {border: 2px solid #272d2f;
+	           padding: 4px;}
+	  
+	  #t01 th{background-color:#272d2f;
+	          color:#FFC529; 
+	          text-align: left;}
+	  
+	   #t02,#t02 th,#t02 td
+	          {border: 2px solid #FE724C;
+	           padding: 4px;
+	           color:#272d2f;
+	           border-spacing: 3px;
+	           border-collapse: separate}
+	  
+	  #t02 th{background-color:#FE724C;
+	          color:#f2f2f2; 
+	          text-align: center}
+	  
+	  #t03,#t03 th,#t03 td
+	          {border: 2px solid #FE724C;
+	           padding: 4px;
+	           border-spacing: 2px;
+	           border-collapse: separate}
+	  
+	  #t03 tr:nth-child(even)
+	             {background-color: #FE724C;
+	              color: #FFC529  }
+	  
+	  #t03 tr:nth-child(odd)
+	             {background-color:#FFC529;
+	              color:#FE724C }
+	  
+	  #t03 th{background-color:#f2f2f2;
+	          color:#272d2f }
+	  
+	  #t04 td:nth-child(even)
+	             {background-color: #FE724C;
+	              color: #FFC529  }
+	  #t04 td:nth-child(odd)
+	             {background-color:#FFC529;
+	              color:#FE724C }
+	  
+	  #t04,#t04 th,#t04 td
+	          {border: 2px solid #FFC529;
+	           padding: 4px;
+	           border-spacing: 2px;
+	           border-collapse: separate}
+	  #t05 tr:hover
+	          {background-color:#FFC529;
+		       color: #f2f2f2;
+	                 }
+	  #t05 th{background-color: #272d2f;
+	          color:#f2f2f2}
+	  
+	  #t05,#t05 th,#t05 td
+	          {border: 2px solid #272d2f;
+	           border-collapse: collapse;}
+	  
+	  #t05{width: 610px}
+	  
+	  #t05 th{height: 40px}
+	  
+	  #t05 td{height: 30px;} 
+	  
+	  #t06 {width:  100%}
+	  
+	  #t06 th{background-color: #272d2f;
+	          color:#f2f2f2}
+	  
+	  #t06 td{background-color: #FFC529;
+	          color:#f2f2f2}
+	     
+	  #t06,#t06 th,#t06 td
+	  {text-align: center; 
+	   border: 2px solid #272d2f;
+	   border-collapse: collapse;
+	   height: 25px;
+	   padding: 4px;
+	   border-spacing: 2px;}
+	  
+	  #t06 th,#t06 td{width: 50px}
+	      
+  </style>
+</head>
+
+<body>
+	<header>
+		<h1>Tablas en html</h1>
+	</header>
+	<nav></nav>
+<main>
+  <section>
+			<h2>Tabla Simple</h2>
+			<table border="1">
+			
+			<thead>
+				<tr>
+				  <th>Nombre</th>
+				  <th>Dirección</th>
+				  <th>Teléfono</th>
+				</tr>
+			</thead>
+				
+			<tbody>
+				<tr>
+					<td>Luz Barrera</td>
+					<td>Calle Flores #23</td>
+					<td>2225436787</td>
+				</tr>
+				<tr>
+					<td>Aylin Rodríguez</td>
+					<td>Avenida Margarita #43</td>
+					<td>2229087654</td>
+				</tr>
+				<tr>
+					<td>Fabiola García</td>
+					<td>Privada de los Frailes#76</td>
+					<td>2223786532</td>
+				</tr>
+				<tr>
+					<td>Sarah Fernández</td>
+					<td>Calle Tejocote #55</td>
+					<td>2227895634</td>
+				</tr>
+				<tr>
+					<td>Paulina Jimenez</td>
+					<td>Avenida Peras #2</td>
+					<td>2229085649</td>
+				</tr>
+				
+			</tbody>
+				
+			<tfoot></tfoot>
+			</table>
+	</section>
+<section>
+    <h2>Tabla con Bordes Colapsados</h2>
+		  <table id="t01" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Dirección</th>
+		        <th>Teléfono</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Calle Flores #23</td>
+		        <td>2225436787</td>
+	          </tr>
+		      <tr>
+		        <td>Aylin Rodríguez</td>
+		        <td>Avenida Margarita #43</td>
+		        <td>2229087654</td>
+	          </tr>
+		      <tr>
+		        <td>Fabiola García</td>
+		        <td>Privada de los Frailes#76</td>
+		        <td>2223786532</td>
+	          </tr>
+		      <tr>
+		        <td>Sarah Fernández</td>
+		        <td>Calle Tejocote #55</td>
+		        <td>2227895634</td>
+	          </tr>
+		      <tr>
+		        <td>Paulina Jimenez</td>
+		        <td>Avenida Peras #2</td>
+		        <td>2229085649</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+		<section>
+		  <h2>Tabla que abarca más de una columna</h2>
+		  <table id="t02" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Dirección</th>
+		        <th colspan="2">Teléfonos</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Calle Flores #23</td>
+		        <td>2225436787</td>
+				<td>2225556575</td>
+	          </tr>
+		      <tr>
+		        <td>Aylin Rodríguez</td>
+		        <td>Avenida Margarita #43</td>
+		        <td>2229087654</td>
+				<td>2227778797</td>
+	          </tr>
+		      <tr>
+		        <td>Fabiola García</td>
+		        <td>Privada de los Frailes#76</td>
+		        <td>2223786532</td>
+				<td>2229990908</td>
+	          </tr>
+		      <tr>
+		        <td>Sarah Fernández</td>
+		        <td>Calle Tejocote #55</td>
+		        <td>2227895634</td>
+				<td>2223335476</td>
+	          </tr>
+		      <tr>
+		        <td>Paulina Jimenez</td>
+		        <td>Avenida Peras #2</td>
+		        <td>2229085649</td>
+				<td>2224446768</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+	
+	<section>
+	  <h2>Tabla con bandas de diferente color</h2>
+	  <table id="t03" border="1">
+	    <thead>
+	      <tr>
+	        <th>Nombre</th>
+	        <th>Dirección</th>
+	        <th>Teléfono</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>Luz Barrera</td>
+	        <td>Calle Flores #23</td>
+	        <td>2225436787</td>
+          </tr>
+	      <tr>
+	        <td>Aylin Rodríguez</td>
+	        <td>Avenida Margarita #43</td>
+	        <td>2229087654</td>
+          </tr>
+	      <tr>
+	        <td>Fabiola García</td>
+	        <td>Privada de los Frailes#76</td>
+	        <td>2223786532</td>
+          </tr>
+	      <tr>
+	        <td>Sarah Fernández</td>
+	        <td>Calle Tejocote #55</td>
+	        <td>2227895634</td>
+          </tr>
+	      <tr>
+	        <td>Paulina Jimenez</td>
+	        <td>Avenida Peras #2</td>
+	        <td>2229085649</td>
+          </tr>
+        </tbody>
+	    <tfoot>
+        </tfoot>
+      </table>
+</section>
+	<section>
+	  <h2>Tabla con bandas de diferente color</h2>
+	  <table id="t04" border="1">
+	    <thead>
+	      <tr>
+	        <th>Nombre</th>
+	        <th>Dirección</th>
+	        <th>Teléfono</th>
+			<th>Ciudad</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>Luz Barrera</td>
+	        <td>Calle Flores #23</td>
+	        <td>2225436787</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Aylin Rodríguez</td>
+	        <td>Avenida Margarita #43</td>
+	        <td>2229087654</td>
+			 <td>Veracruz</td>
+          </tr>
+	      <tr>
+	        <td>Fabiola García</td>
+	        <td>Privada de los Frailes#76</td>
+	        <td>2223786532</td>
+			<td>Monterrey</td>
+          </tr>
+	      <tr>
+	        <td>Sarah Fernández</td>
+	        <td>Calle Tejocote #55</td>
+	        <td>2227895634</td>
+			<td>Iguala</td>
+          </tr>
+	      <tr>
+	        <td>Paulina Jimenez</td>
+	        <td>Avenida Peras #2</td>
+	        <td>2229085649</td>
+			<td>Xalapa</td>
+          </tr>
+        </tbody>
+	    <tfoot>
+        </tfoot>
+      </table>
+</section>
+	<section>
+	  <h2>Tabla con Resaltado Flotante</h2>
+	  <table id="t05" border="1">
+	    <thead>
+	      <tr>
+	        <th>Nombre</th>
+	        <th>Dirección</th>
+	        <th>Teléfono</th>
+	        <th>Ciudad</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>Luz Barrera</td>
+	        <td>Calle Flores #23</td>
+	        <td>2225436787</td>
+	        <td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Aylin Rodríguez</td>
+	        <td>Avenida Margarita #43</td>
+	        <td>2229087654</td>
+	        <td>Veracruz</td>
+          </tr>
+	      <tr>
+	        <td>Fabiola García</td>
+	        <td>Privada de los Frailes#76</td>
+	        <td>2223786532</td>
+	        <td>Monterrey</td>
+          </tr>
+	      <tr>
+	        <td>Sarah Fernández</td>
+	        <td>Calle Tejocote #55</td>
+	        <td>2227895634</td>
+	        <td>Iguala</td>
+          </tr>
+	      <tr>
+	        <td>Paulina Jimenez</td>
+	        <td>Avenida Peras #2</td>
+	        <td>2229085649</td>
+	        <td>Xalapa</td>
+          </tr>
+        </tbody>
+	    <tfoot>
+        </tfoot>
+      </table>
+</section>
+	<section style="overflow-x: auto">
+	  <h2>Tabla Responsive</h2>
+	<table id="t06">
+		<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>María López</td>
+			<td>90</td>
+			<td>60</td>
+			<td>75</td>
+			<td>100</td>
+			<td>88</td>
+			<td>66</td>
+			<td>88</td>
+			<td>75</td>
+			<td>88</td>
+			<td>77</td>
+			<td>88</td>
+			<td>75</td>
+			<td>25</td>
+			<td>100</td>
+			<td>100</td>
+			<td>92</td>
+			<td>99</td>
+		</tr>
+		<tr>
+			<td>Jesús Gutiérrez</td>
+			<td>56</td>
+			<td>100</td>
+			<td>66</td>
+			<td>75</td>
+			<td>88</td>
+			<td>88</td>
+			<td>75</td>
+			<td>88</td>
+			<td>75</td>
+			<td>54</td>
+			<td>88</td>
+			<td>100</td>
+			<td>88</td>
+			<td>73</td>
+			<td>67</td>
+			<td>100</td>
+			<td>88</td>
+		</tr>
+		<tr>
+			<td>Felipe Rosas</td>
+			<td>100</td>
+			<td>100</td>
+			<td>100</td>
+			<td>75</td>
+			<td>55</td>
+			<td>75</td>
+			<td>76</td>
+			<td>88</td>
+			<td>75</td>
+			<td>88</td>
+			<td>45</td>
+			<td>81</td>
+			<td>88</td>
+			<td>56</td>
+			<td>75</td>
+			<td>100</td>
+			<td>100</td>
+		</tr>
+		</tbody>
+		<tfoot></tfoot>
+	</table></section>
+	<footer> Elaborado por Jared Idalí Montalvo Gutiérrez
+	</footer>
+	</main>
+</body>
+</html>

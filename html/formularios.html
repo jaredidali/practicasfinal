@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+	  <h1>Formularios en HTML</h1>
+	</header>
+	<nav>
+	  <ul class="estilo_nav">
+		    <li><a href="index.html">Inicio</a></li>
+			<li><a href="miprimerapaginaweb.html">Mi primera página</a></li>
+			<li><a href="listas.html">Listas</a></li>
+			<li><a href=" tablas.html">Tablas</a></li>
+			<li><a href="imagenes.html">Imagenes</a></li>
+			<li><a href="video.html">Videos</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="enlaceshtml.html">Enlaces</a></li>
+			<li><a href="formularios.html">Formularios</a></li>
+			<li><a href="flexbox.html">Flexbox</a></li>
+	  </ul>
+	</nav>
+	
+	<main>
+	  <section>
+        <h2>Formulario Simple</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis harum odit ex quaerat magnam, doloremque?</p>
+		  
+		  <form action="gracias.html" method="get">
+	      <label>Nombre:</label>
+		  <input type="text" id="nombre" name="nombre">
+		  <label>Apellido:</label>
+		  <input type="text" id="apellidos" name="apellidos">
+		  <input type="submit" value="Enviar">
+		  </form>
+	  </section>
+			
+	  <section>
+	    <h2>Formulario usando Radiobutton</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aut!</p>
+		<form id="datos1" name="datos1" action="gracias.html" method="get">
+		  <label for="nombre">Nombre:</label> 
+		  <input type="text" name="nombre2" id="nombre2">
+		  <label for="apellidos">Apellido:</label>
+	      <input type="text" name="apellidos2" id="apellidos2"><br> 
+		  <label>Género:&nbsp;</label>
+	      <input name="genero" type="radio" id="radio2" title="genero" value="femenino">
+          <label for="genero">Femenino&nbsp;</label>
+          <input name="genero" type="radio" id="radio" title="genero" value="masculino">
+          <label for="genero">Masculino&nbsp;</label>
+		  <input type="submit" value="Enviar"> 
+		</form>
+	  </section>
+		
+	  <section>
+        <h2>Formulario usando checkbox y otros</h2>
+        <p>Dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <form id="datos2" name="datos2" action="gracias.html" method="get"></form>
+           <label for="nombre">Nombre:</label>
+           <input type="text" name="nombre3" id="nombre3">
+           <label for="apellidos">Apellidos:</label>
+           <input type="text" name="apellidos3" id="apellidos3"><br>
+           <label>Género:&nbsp;</label>
+           <input name="genero" type="radio" id="radio2" title="genero" value="femenino">
+           <label for="genero">Femenino&nbsp;</label>
+           <input name="genero" type="radio" id="radio" title="genero" value="masculino">
+           <label for="genero">Masculino&nbsp;</label><br>
+		  
+	  <p>  
+      <label>Elige de la lista el genero musical que más te guste:</label><br>
+	  <label>
+      <input type="checkbox" name="musicafavorita" value="pop" id="musicafavorita_0">
+      Pop</label><br>
+      <label>
+      <input type="checkbox" name="musicafavorita" value="rock" id="musicafavorita_1">
+      Rock</label>
+      <br>
+      <label>
+      <input type="checkbox" name="musicafavorita" value="jazz" id="musicafavorita_2">
+      Jazz</label>
+      <br>
+      <label>
+      <input type="checkbox" name="musicafavorita" value="blues" id="musicafavorita_3">
+      Blues</label>
+      <br>
+      <label>
+      <input type="checkbox" name="musicafavorita" value="alternativo" id="musicafavorita_4">
+      Alternativo</label>
+      <br>
+	  </p>
+      <label for="pais">Nacionalidad:</label>
+      <select name="pais" id="pais">
+          <option value="arg">Argentina</option>
+          <option value="ch">Chile</option>
+          <option value="fr">Francia</option>
+          <option value="li">Lituania</option>
+          <option value="mx">México</option>
+      </select>
+      <input name="submit2" type="submit" id="submit2" formmethod="GET" value="Enviar">
+  </section>
+		
+  <section> 
+    <h2>Formulario organizado dentro de una tabla</h2>
+    <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+	  
+     <form action="gracias.html" method="get">
+	 <table width="50%" border="0">	 
+      <tbody>	 
+         <tr>
+         <td><label for="nombre">Nombre</label></td>
+         <td><input type="text" id="nombre" name="nombre"></td>
+         </tr>
+			 
+         <tr>
+         <td><label for="apellidos">Apellidos</label></td>
+         <td><input type="text" id="apellidos" name="apellidos"></td>
+         </tr>
+
+         <tr>
+         <td><label for="edad">Edad</label></td>
+         <td><input type="number" id="edad" name="edad" min="1" max="99"></td>
+         </tr>
+
+         <tr>
+         <td><input type="submit" value="Enviar"></td>
+         </tr>
+      </tbody>
+      </table>
+	  </form>
+    </section>
+		
+	<section>
+		<h2>Formulario Área de Texto </h2>
+        <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <p>&nbsp;</p>
+		<label for="edad">Describete:</label><br>
+		<textarea name="message" rows="10" cols="30">
+        
+        </textarea>
+	</section>
+		
+    <section>
+		<h2>Formulario Usuario y Contraseña </h2>
+        <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <p>&nbsp;</p>
+<form action="gracias.html" method="get">
+      <label for="username">Usuario:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd">
+	  <input type="submit" value="Enviar">
+      </form>
+	</section>
+		
+	<section>
+		<h2>Formulario Contenedor de color </h2>
+        <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <p>&nbsp;</p>
+        <form action="gracias.html" method="get">
+        <label for="favcolor">Selecciona tu color favorito:</label>
+        <input name="favcolor" type="color" class="colorselector" id="favcolor"><br>
+	    <input type="submit" value="Enviar">
+        </form>	
+	</section>
+		
+	<section>
+		<h2>Formulario con Leyenda </h2>
+        <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <p>&nbsp;</p>
+		<form action="Agradecimiento.html">
+        <fieldset class="diseñodeingreso">
+        <legend class="legend">Datos de Ingreso:</legend>
+        <label for="fname">Usuario:</label><br>
+        <input type="text" id="fname" name="fname" value="ingese su usuario"><br>
+        <label for="lname">Matricula</label><br>
+        <input type="text" id="lname" name="lname" value="ingrese su matricula"><br><br>
+        <input type="submit" value="Enviar">
+        </fieldset>
+        </form>
+	</section>
+		
+	<section>
+		<h2>Formulario Contenedor de color </h2>
+        <p>dolorum nam culpa eaque  ugiat, doloribus illum facilis tempore tenetur obcaecati ipsum alias mollitia saepe esse laboriosam eveniet accusantium. Molestiae fugiat consequuntur</p>
+        <p>&nbsp;</p>
+		<form action="gracias.html" method="get">
+        <label for="bdaymonth">Fecha de Cumpleaños (mes y año):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+		<input type="submit" value="Enviar">
+        </form>
+	</section>
+		
+	
+		
+
+</main>
+<footer> 
+<h5>Elaborado por:Jared Idalí Montalvo Gutiérrez</h5></footer>
+</body>
+</html>

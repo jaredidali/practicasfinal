@@ -1,0 +1,16 @@
+.textoindex {
+	color: #FFFFFF;
+	font-family: montserrat;
+	font-style: normal;
+	font-weight: 400;
+}
+.imgindex {
+	width: 20%;
+	float: right;
+	padding-bottom: 5px;
+	clear: left;
+	margin-top: -70px;
+	padding-left: 20px;
+	padding-right: 5px;
+	padding-top: 0px;
+}
